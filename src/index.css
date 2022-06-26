@@ -14,7 +14,7 @@ code {
 }
 
 .App{
-  min-width:1180px ;
+  max-width:1180px ;
   margin: 0 auto;
   padding: 0 40px;
   color: white;
