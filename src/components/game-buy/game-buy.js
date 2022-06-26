@@ -1,11 +1,14 @@
-import { type } from "@testing-library/user-event/dist/type";
 import React from "react";
-
+import { useDispatch } from "react-redux";
+import { setItemInCart } from "../../redux/cart/reducer";
 import { Button } from "../button";
 import "./game-buy.css";
 
 export const GameBuy = ({ game }) => {
-
+  const dispatch = useDispatch();
+  const handleClick = (e) => {
+    e.stopPropagation(); //останавливаем всплытие
+    dispatch(setItemInCart(game));
   };
   return (
     <div className="game-buy">
