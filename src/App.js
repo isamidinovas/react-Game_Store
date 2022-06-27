@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import { HomePage } from "./pages/home-page/home-page";
 import { Header } from "./components/header";
 import { GamePage } from "./pages/game-page";
+import { OrderPage } from "./pages/order-page";
 import { store } from "./redux";
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/app/:title" element={<GamePage />} />
+            <Route exact path="/order" element={<OrderPage />} />
           </Routes>
         </div>
       </Router>
