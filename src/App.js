@@ -12,9 +12,9 @@ function App() {
         <div className="App">
           <Header />
           <Routes>
-            <Route exact path="/" element={<HomePage />} />
-            <Route exact path="/app/:title" element={<GamePage />} />
-            <Route exact path="/order" element={<OrderPage />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/app/:title" element={<GamePage />} />
+            <Route path="/order" element={<OrderPage />} />
           </Routes>
         </div>
       </Router>
