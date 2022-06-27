@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { useSelector } from "react-redux/es/exports";
-import "./cart-block.css";
 import { BiCartAlt } from "react-icons/bi";
 import { CartMenu } from "../cart-menu";
 import { ItemsInCart } from "../items-in-cart";
 import { calcTotalPrice } from "../utils";
+import "./cart-block.css";
 export const CartBlock = () => {
   const [isCartMenuVisible, setIsCartMenuVisible] = useState(false);
   const items = useSelector((state) => state.cart.itemsInCart); //отобразим наши игры в этом блоке
